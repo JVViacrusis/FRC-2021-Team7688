@@ -37,7 +37,7 @@ public final class Constants {
     public final static int AGITATOR_MOTOR_PORT = 1;
     public final static double AGITATOR_RAMP_TIME = 0.3;
     public final static double AGITATOR_MOTOR_SPEED = 0.5;
-    public final static double AGITATOR_WAIT_TIME = 7;
+    public final static double AGITATOR_WAIT_TIME = 5;
     public final static double CHANGE_DIRECTION_TIME=0.7;
 
     /*
@@ -57,15 +57,17 @@ public final class Constants {
     Collector motor
     */
     public final static int COLLECTOR_MOTOR_PORT = 2;
-    public final static double COLLECTOR_MOTOR_SPEED = 0.5;
+    public final static double COLLECTOR_MOTOR_SPEED = 0.65;
     public final static double COLLECTOR_RAMP_UP = 0.5;
   
     /*
     LAUNCHER
     */
     public static final double LAUNCHER_RAMP = 1.5;
-    public static final double LAUNCHER_UPPER_SPEED = 0.6;
-    public static final double LAUNCHER_LOWER_SPEED = 0.6;
+
+    public static final double LAUNCHER_UPPER_SPEED = 0.7;
+    public static final double LAUNCHER_LOWER_SPEED = 0.7;
+
     public static final int LAUNCHER_UPPER_MULTIPLIER = 1;
     public static final int LAUNCHER_LOWER_MULTIPLIER = 1;
     public static final int LAUNCHER_UPPER_CHANNEL = 11;
@@ -100,7 +102,8 @@ public final class Constants {
     LIMELIGHT PID 
     */
     public static final double LIMELIGHT_ROTATTON_SETPOINT = 0;
-    public static final double LIMELIGHT_ROTATION_KP = -1.15;
+    public static final double LIMELIGHT_ROTATION_KP = -0.85;
+
     public static final double MINROTATION_I_LIMITE = -0.45;
     public static final double MAX_I_LIMIT = 0.35;
     public static final double LIMELIGHT_ROTATION_KI = -0.0;
@@ -115,7 +118,7 @@ public final class Constants {
     DRIVETRAIN
     */
     public static final int DRIVETRAIN_DRIVE_DIRECTION = 1; //1 or -1
-    public static final double DRIVETRAIN_RAMP = 0.6;
+    public static final double DRIVETRAIN_RAMP = 0.5;
 
     public static final int DRIVETRAIN_LEFT_FRONT_TOP_CHANNEL = 7;
     public static final int DRIVETRAIN_LEFT_FRONT_BOTTOM_CHANNEL = 8;

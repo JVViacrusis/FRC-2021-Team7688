@@ -39,7 +39,8 @@ public class teleDrive extends CommandBase {
   @Override
   public void execute() {
     led.Speed(joystick.getRawAxis(Constants.DRIVETRAIN_JOYSTICK_AXIS_SPEED));
-    drivetrain.drive(joystick.getRawAxis(Constants.DRIVETRAIN_JOYSTICK_AXIS_SPEED)*0.7, joystick.getRawAxis(Constants.DRIVETRAIN_JOYSTICK_AXIS_ROTATION)*0.7);
+    drivetrain.drive(-0.7*joystick.getRawAxis(Constants.DRIVETRAIN_JOYSTICK_AXIS_SPEED), 
+                     0.7*joystick.getRawAxis(Constants.DRIVETRAIN_JOYSTICK_AXIS_ROTATION));
   }
 
   // Called once the command ends or is interrupted.
